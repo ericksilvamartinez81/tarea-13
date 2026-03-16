@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENITH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ZENITH.</div>
+        <button class="btn-list-open" id="open">
+            <span class="material-symbols-outlined">density_medium</span>
+        </button>
+            
+        <div class="secciones" id="secciones">
+            <button class="btn-list-close" id="close">
+                <span class="material-symbols-outlined">close_small</span>
+            </button>
+            <ul class="sections">
+                <li onclick="goToSection(1)">Manifiesto</li>
+                <li onclick="goToSection(2)">Espacios</li>
+                <li onclick="goToSection(3)">Testimonios</li>
+            </ul>
+            <div class="call">
+                <a>Unirme</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container" id="main-container">
+        
+        <header class="header step active" id="sec1">
+            <div class="header-content content-anim">
+                <h1 class="title">
+                    Desconecta para volver a <span class="highlight">conectar.</span>
+                </h1>
+                <p class="subtitle">
+                    <span class="highlight-sub">Desconecta</span> del ruido digital. Reconecta con tu esencia en el corazón indómito de la Patagonia.
+                </p>
+                <a class="cta-btn" onclick="goToSection(1)">SOLICITAR ACCESO EXCLUSIVO</a>
+            </div>
+        </header>
+
+<main>
+    <section class="step" id="sec2">
+        <div class="intro-content content-anim">
+            <h2 class="intro-title">¿Cuándo fue la última vez que apagaste todo?</h2>
+            <p class="subtitle">Tu cerebro procesa 34 GB de información diaria. El burnout no es un trofeo de guerra. En ZENITH, eliminamos la señal para que puedas escuchar tus propios pensamientos.</p>
+        </div>
+
+    </section>
+
+    <section class="step" id="sec3">
+        <div class="features-grid content-anim">
+            <div class="img-card">
+                <div class="img-bg" style="background-image: url(https://images.adsttc.com/media/images/673c/7e38/3106/b529/926d/86a6/newsletter/luz-naturaleza-y-hogar-cerramientos-de-vidrio-que-disuelven-los-limites_2.jpg?1732017734);"></div>
+                <div class="img-content">
+                    <h3>Arquitectura Invisible</h3>
+                    <p>Cabañas de cristal y madera que se funden con el bosque nativo.</p>
+                </div>
+            </div>
+            
+            <div class="img-card">
+                <div class="img-bg" style="background-image: url(https://hips.hearstapps.com/hmg-prod/images/tostas-sanas-saludables-elle-gourmet-64b7fc94449f4.jpg?crop=0.9044444444444444xw:1xh;center,top&resize=1200:*);"></div>
+                <div class="img-content">
+                    <h3>Gastronomía Orgánica</h3>
+                    <p>Menú de autor 'Farm-to-table' preparado por chefs privados.</p>
+                </div>
+            </div>
+            
+            <div class="img-card">
+                <div class="img-bg" style="background-image: url(https://i.pinimg.com/736x/5e/3f/17/5e3f17d0f8f3842f82be8514b77ca34d.jpg);"></div>
+                <div class="img-content">
+                    <h3>Detox Digital</h3>
+                    <p>Cajas de seguridad para dispositivos al check-in.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="step" id="sec4">
+        <div class="reviews-container content-anim">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Volví a la ciudad con una claridad mental que no sentía desde que fundé mi empresa. Zenith no es un hotel, es un reinicio del sistema."</p>
+                <div class="reviewer">
+                    <span class="reviewer-name">Carlos M.</span>
+                    <span class="reviewer-role">CEO Tech</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"El silencio de la Patagonia es adictivo. Dejé mi teléfono en la caja fuerte y no lo extrañé ni un segundo. La mejor inversión personal."</p>
+                <div class="reviewer">
+                    <span class="reviewer-name">Sofia L.</span>
+                    <span class="reviewer-role">Venture Capital</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+        <footer class="step" id="footer-sec">
+            <div class="footer-content content-anim">
+                <h3 class="footer-title">La temporada 2025 está por agotarse.</h3>
+                <p class="footer-desc">Únete a la lista de espera. Solo admitimos 12 huéspedes por mes.</p>
+                
+                <div class="newsletter-form">
+                    <input type="text" placeholder="Tu Nombre Completo" class="input-field">
+                    <input type="email" placeholder="Tu Correo Corporativo" class="input-field">
+                    <button class="cta-btn btn-invert">UNIRME A LA LISTA</button>
+                </div>
+                
+                <span class="copyright">© 2024 ZENITH Retiros. Patagonia, Chile.</span>
+            </div>
+        </footer>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
